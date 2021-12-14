@@ -1,5 +1,5 @@
 # small-boat-detector
-This repository contains the trained yolo v3 configuration file to detect small boats in satellite imagery, used in the paper "Monitoring visitation at North Carolina artificial reefs using high-resolution satellite imagery" submitted for review in Ocean and Coastal Management. Please contact for trained model weights (file exceeds size limits).
+This repository contains the trained yolo v3 configuration file to detect small boats in satellite imagery, used in the paper "Monitoring visitation at North Carolina artificial reefs using high-resolution satellite imagery" submitted for review in Ocean and Coastal Management. **Please contact me for trained model weights (file exceeds size limits)**.
 
 - [Requirements](#Requirements)
 - [Test on an image](#Test-on-an-image)
@@ -40,7 +40,7 @@ Darknet will be installed on your computer. We found that it was easiest to have
 
 Replace any images and text files within data/obj with your images and txt files. The txt files should include the class and the yolo coordinates. The test, train, and valid txt files should include the path (i.e., data/obj/imageName.png) for the set of images selected for testing, training, and validation.
 
-**To train the model:**
+### To train the model:
 
 To train the model FROM SCRATCH that also outputs a log of model training and calculates mean average precision (map), first change directory (cd) to darknet. Then run:
 
@@ -48,13 +48,13 @@ To train the model FROM SCRATCH that also outputs a log of model training and ca
 
 The obj.data file has the path to the training and validation txt files (data/train.txt, data/valid.txt).
 
-**To evaluate model performance on test set:**
+### To evaluate model performance on test set:
 
 This code gets the images and saves the resulting detections in a .json file.
 
 `Get-Content data/test.txt | ./darknet.exe detector test data/obj.data cfg/yolov3_boat.cfg backup/yolov3_boat_final.weights -ext_output -dont_show -out result.json`
 
-**To run on your dataset:**
+### To run on your dataset:
 
 dataset.txt should include the paths of all of your images you want to detect boats in.
 
