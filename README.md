@@ -1,6 +1,8 @@
 # small-boat-detector
 This repository contains the trained yolo v3 configuration file to detect small boats in satellite imagery, used in the paper "Monitoring visitation at North Carolina artificial reefs using high-resolution satellite imagery" submitted for review in Ocean and Coastal Management. **Please contact me for trained model weights (file exceeds size limits)**.
 
+[![DOI](https://zenodo.org/badge/438004430.svg)](https://zenodo.org/badge/latestdoi/438004430)
+
 - [Requirements](#Requirements)
 - [Test on an image](#Test-on-an-image)
 - [Tips for project set-up](#Project-Tips)
