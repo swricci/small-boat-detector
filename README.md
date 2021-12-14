@@ -7,7 +7,7 @@ This repository contains the trained yolo v3 configuration file to detect small 
 
 
 ## Requirements
-This project used the darknet neural networks for object detection from the [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) repository. To use the trained model weights and the configuration file that was used in this study to detect boats in Planet satellite imagery, you would need to install darknet according to the directions in the darknet.
+This project used the darknet neural networks for object detection from the [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) repository. To use the trained model weights and the configuration file that was used in this study to detect boats in Planet satellite imagery, you would need to install darknet according to the directions in that repository.
 
 Once successfully installed, run the test code provided in the darknet README file:
 
