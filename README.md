@@ -15,8 +15,16 @@ Once successfully installed, run the test code provided in the darknet README fi
 
 ## Test on an image
 Also included is an image from the study. 
-path to image here
+
+![Satellite image showing boats](testImage_20180805_151747_104a_3B_Visual.png)
+
 To use our trained weights to detect the boats in this image, run the following code:
+
+`./darknet.exe detector test data/obj.data cfg/yolov3_boatv3.cfg backup/yolov3_boatv3_final.weights data/testImage_20180805_151747_104a_3B_Visual.png`
+
+Detection Results:
+
+![Satellite image now showing detection results around each boat](predictions.jpg)
 
 ## Project Tips
 Darknet will be installed on your computer. We found that it was easiest to have all files and data associated with detection to be located within the darknet directory. Within the directory, you should have the following folders (these should already exist from downloading darknet):
